@@ -1,0 +1,201 @@
+:root {
+  --first-color: #232931;
+  --second-color: #393e46;
+  --third-color: #eeeeee;
+  --fourth-color: #8fb1e9;
+  --fifth-color: #dd6b4d;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-small: 1rem;
+}
+
+body {
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Bar */
+header {
+  background: var(--second-color);
+  position: sticky;
+  top: 0;
+}
+.container {
+  margin: 0 auto;
+  width: min(80%, 80rem);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  color: var(--third-color);
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+nav .logo:hover {
+  color: var(--fifth-color);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-links li {
+  padding: 0 1rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: var(--third-color);
+  transition: 0.2s ease-in-out;
+}
+
+li a:hover {
+  color: var(--fifth-color);
+}
+
+/* Section 1 content */
+.section-1-content {
+  background: var(--second-color);
+  padding: 2rem 0;
+  min-height: 80vh;
+}
+.section-1-content h1 {
+  font-size: var(--fs-h1);
+  color: var(--third-color);
+  margin: 0;
+}
+.section-1-content p {
+  color: var(--fifth-color);
+  margin: 0;
+}
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.intro-column {
+  width: 50%;
+}
+.intro-img-content img {
+  width: 100%;
+}
+.intro-content .small-text {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding: 0;
+}
+/* Section 2 Content */
+.section-2-content {
+  background: var(--third-color);
+  min-height: 80vh;
+}
+.about-me-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orange-text {
+  color: var(--fifth-color);
+}
+.about-me {
+  line-height: 1.5rem;
+}
+.about-column {
+  width: 45%;
+}
+.about-img img {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+
+/* Section 3, Skills */
+.section-3-content {
+  min-height: 60vh;
+}
+.logo-img {
+  width: 60px;
+  height: 60px;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.my-skills-container {
+  margin-top: 5rem;
+}
+.skill-logo img, p {
+  padding: .5rem 0;
+}
+.skills {
+  text-align: center;
+  
+}
+
+/* Projects */
+.project-section {
+  height: 90vh;
+}
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-img {
+  width: 95%;
+  height: 210px;
+  border: none;
+  border-radius: 5px;
+}
+
+.project-col {
+  width: 30%;
+}
+.btn {
+  cursor: pointer;
+}
+/* Section 4 Content */
+.footer-content {
+  background: var(--second-color);
+  padding: 2rem 0;
+}
+.footer-container p {
+  color: var(--third-color);
+  margin: 0;
+}
+.contact {
+  color: var(--fifth-color);
+}
+@media (max-width: 730px) {
+  .intro-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .intro-column {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about-me-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .about-column {
+    width: 100%;
+    text-align: center;
+  }
+  .about-me {
+    padding-bottom: 3rem;
+  }
+}
