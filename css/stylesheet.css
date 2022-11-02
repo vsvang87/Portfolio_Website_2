@@ -79,7 +79,6 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .intro-column {
   width: 50%;
@@ -214,6 +213,7 @@ width: 100%;
     flex-direction: column;
   }
   .intro-column {
+    padding-top: 5rem;
     width: 100%;
     text-align: center;
   }
