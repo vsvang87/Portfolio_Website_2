@@ -119,52 +119,81 @@ li a:hover {
 
 /* Section 3, Skills */
 .section-3-content {
-  min-height: 60vh;
+  min-height: 80vh;
+  padding-top: 3rem;
 }
-.logo-img {
-  width: 60px;
-  height: 60px;
+.skills-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.skills {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-.my-skills-container {
-  margin-top: 5rem;
-}
-.skill-logo img, p {
-  padding: .5rem 0;
-}
-.skills {
+.skill-column {
   text-align: center;
-  
+}
+.skill-column p {
+  padding: 0;
+  margin: 0;
+}
+.skill-column img {
+  width: 50%;
+}
+.title {
+  text-align: center;
 }
 
 /* Projects */
 .project-section {
-  height: 90vh;
+  min-height: 80vh;
+  padding-top: 3rem;
 }
 .project-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.project-img {
-  width: 95%;
-  height: 210px;
-  border: none;
-  border-radius: 5px;
+.project-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  border: 2px solid var(--first-color);
+  width: 30%;
+  min-height: 58vh;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.3);
+}
+.background-title {
+  background: var(--first-color);
+  width: 100%;
+  color: #fff;
+}
+.background-div li {
+  list-style: none;
+}
+.subtitle {
+  font-weight: bold;
+}
+.subtitle::after {
+content: "";
+display: block;
+height: 2px;
+background: #dd6b4d;
+width: 100%;
 }
 
-.project-col {
-  width: 30%;
+.background-div a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.5);
 }
-.btn {
-  cursor: pointer;
+.background-div a:hover {
+  color: #dd6b4d;
+  z-index: 1;
 }
+
 /* Section 4 Content */
 .footer-content {
   background: var(--second-color);
@@ -172,10 +201,12 @@ li a:hover {
 }
 .footer-container p {
   color: var(--third-color);
-  margin: 0;
+  margin: 0.5rem 0;
+  text-align: center;
 }
 .contact {
   color: var(--fifth-color);
+  text-align: center;
 }
 @media (max-width: 730px) {
   .intro-container {
@@ -197,5 +228,22 @@ li a:hover {
   }
   .about-me {
     padding-bottom: 3rem;
+  }
+  .section-3-content {
+    min-height: 50vh;
+  }
+  .project-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project-column {
+    width: 100%;
+    margin: 1rem 0;
+
+  }
+}
+@media (max-width:420px){
+  .skill-column p {
+    font-size: 0.7rem;
   }
 }
