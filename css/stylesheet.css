@@ -143,7 +143,7 @@ li a:hover {
 /* Projects */
 .project-section {
   min-height: 80vh;
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 .project-container {
   display: flex;
@@ -160,7 +160,7 @@ li a:hover {
   text-align: center;
   border: 2px solid var(--first-color);
   width: 30%;
-  min-height: 58vh;
+  min-height: 62vh;
   box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.3);
 }
 .background-title {
@@ -238,7 +238,7 @@ width: 100%;
   }
   .project-column {
     width: 100%;
-    margin: 1rem 0;
+    margin-bottom: 2.5rem;
 
   }
 }
