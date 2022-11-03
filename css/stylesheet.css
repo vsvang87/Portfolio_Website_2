@@ -238,12 +238,15 @@ width: 100%;
   }
   .project-column {
     width: 100%;
-    margin-bottom: 2.5rem;
-
+    margin-bottom: 1rem;
   }
 }
-@media (max-width:420px){
+@media (max-width:500px){
   .skill-column p {
     font-size: 0.7rem;
+  }
+  .project-section {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
