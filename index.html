@@ -8,6 +8,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!--Font awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/css/stylesheet.css" />
     <title>Portfolio Website</title>
   </head>
@@ -15,22 +25,35 @@
     <header>
       <div class="container">
         <nav>
-          <a href="index.html" class="logo">V.V</a>
+          <p class="logo">V.V.</p>
           <ul class="nav-links">
-            <li><a href="#contact-me">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a href="#contact-me"
+                >Contact <i class="fa fa-address-book"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#projects"
+                >Projects <i class="fa fa-diagram-project"></i
+              ></a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <section class="section-1-content">
-        <div class="container">
+        <div class="wrapper">
           <div class="intro-container">
             <div class="intro-content intro-column">
-              <h1>Hi, I'm Visay</h1>
-              <p class="small-text">I am a HTML Email / Frontend Developer</p>
-              <p class="small-text">I enjoy creating and learning</p>
+              <h1>Visay Vang</h1>
+              <p class="small-text">HTML Email / Frontend Developer</p>
+              <a href="https://www.linkedin.com/in/vsvang/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
             <div class="intro-img-content intro-column">
               <img
@@ -168,11 +191,44 @@
     <!--Footer-->
     <footer>
       <section class="footer-content">
+        <h1>Contact Me</h1>
         <div class="container">
           <div class="footer-container" id="contact-me">
-            <h2 class="contact">Contact Me</h2>
-            <p>Phone: 414-243-4862</p>
-            <p>Email: vsvang@gmail.com</p>
+            <form
+              id="my-form"
+              action="https://formspree.io/f/moqbbvna"
+              method="POST"
+            >
+              <div class="input-group">
+                <input type="text" name="name" id="firstname" required />
+                <label for="firstname"><i class="fa fa-user"></i> Name</label>
+              </div>
+              <div class="input-group">
+                <input type="text" name="number" id="number" required />
+                <label for="number"
+                  ><i class="fa-solid fa-phone"></i> Phone</label
+                >
+              </div>
+              <div class="input-group">
+                <input type="email" name="email" id="email" required />
+                <label for="email"
+                  ><i class="fa-solid fa-envelope"></i> Email</label
+                >
+              </div>
+              <div class="input-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="8"
+                  required
+                ></textarea>
+                <label for="message"
+                  ><i class="fa-solid fa-message"></i> Message</label
+                >
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <div id="status"></div>
           </div>
         </div>
       </section>
