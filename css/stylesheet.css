@@ -1,3 +1,7 @@
+* {
+  font-size: 100%;
+}
+
 :root {
   --first-color: #232931;
   --second-color: #393e46;
@@ -5,7 +9,7 @@
   --fourth-color: #8fb1e9;
   --fifth-color: #dd6b4d;
 
-  --fs-h1: 4rem;
+  --fs-h1: 5rem;
   --fs-h2: 2rem;
   --fs-small: 1rem;
 }
@@ -15,6 +19,7 @@ body {
   font-size: 1rem;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.07rem;
 }
 
 /* Nav Bar */
@@ -28,21 +33,18 @@ header {
   margin: 0 auto;
   width: min(80%, 80rem);
 }
-.wrapper {
-  margin-inline: auto;
-  width: min(60%, 80rem);
-}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  letter-spacing: 0.09rem;
+  text-transform: uppercase;
 }
 nav .logo {
   color: var(--third-color);
   font-size: 1.2rem;
   border: 1px solid var(--third-color);
-  padding: 0.3rem 1.5rem;
+  padding: 0.2rem 1.5rem;
 }
 
 .nav-links {
@@ -68,18 +70,32 @@ li a:hover {
 /* Section 1 content */
 
 .section-1-content {
-  background: var(--second-color);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-  padding: 2rem 0;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 0.09rem;
+  position: relative;
+}
+/* Transparent Background */
+.section-1-content::before {
+  content: '';
+  background-image: url(/images/luca-bravo-VowIFDxogG4-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(40%);
+}
+.intro-content{
+  position: relative;
 }
 .intro-content h1 {
   font-size: var(--fs-h1);
-  font-style: italic;
   color: var(--third-color);
   margin: 0;
 }
@@ -104,13 +120,7 @@ li a:hover {
 .intro-content i:hover{
   color: var(--third-color);
 }
-.intro-column {
-  width: 50%;
-  
-}
-.intro-img-content img {
-  width: 100%;
-}
+
 .intro-content .small-text {
   line-height: 1.5rem;
   font-size: 1rem;
@@ -120,7 +130,6 @@ li a:hover {
 /* Section 2 Content */
 .section-2-content {
   min-height: 100vh;
-  letter-spacing: 0.09rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +141,11 @@ li a:hover {
 }
 .orange-text {
   color: var(--fifth-color);
+  text-transform: uppercase;
+}
+.about-me{
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, .2);
+  padding: 0 0.5rem;
 }
 .about-me p {
   line-height: 1.5rem;
@@ -147,8 +161,8 @@ li a:hover {
 }
 .about-img h1 {
   color: var(--second-color);
+  text-transform: uppercase;
 }
-
 .about-img img {
   width: 100%;
   padding-top: 2rem;
@@ -236,6 +250,37 @@ li a:hover {
 /* Landing Page */
 .landing-page-section {
   min-height: 100vh;
+  background: var(--third-color);
+  padding: 1rem 0;
+}
+.landing-page-section h1 {
+  text-align: center;
+}
+.landing-page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.landing-column {
+  width: 32%;
+  height: 20vh;
+  border: 1px solid black;
+}
+/* Mini Project */
+.min-project-section {
+  min-height: 100vh;
+}
+.mini-project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.mini-column {
+  width: 32%;
+  height: 30vh;
+  border: 1px solid var(--fifth-color);
 }
 /* Section 4 Content */
 footer {
@@ -373,7 +418,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     width: 100%;
   }
   .about-me {
-    padding: 2rem 0;
+    margin: 2rem 0;
   }
   .skills-container {
     width: 60%;
