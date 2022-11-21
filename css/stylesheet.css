@@ -193,7 +193,7 @@ li a:hover {
 
 /* Projects, HTML Email */
 .html-project-section {
-  min-height: 165vh;
+  min-height: 170vh;
   background: var(--third-color);
 }
 .html-main-container {
@@ -234,7 +234,7 @@ li a:hover {
   bottom: 0.5rem;
 }
 
-.live a {
+.orange-btn {
   padding: 0.2rem 0.5rem;
   background: var(--fifth-color);
   border-radius: 0.1rem;
@@ -242,7 +242,7 @@ li a:hover {
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
-.live a:hover{
+.orange-btn:hover{
   background: var(--third-color);
   color: var(--fifth-color);
 }
@@ -257,15 +257,19 @@ li a:hover {
   text-align: center;
 }
 .landing-page-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 .landing-column {
-  width: 32%;
-  height: 20vh;
-  border: 1px solid black;
+  width: 100%;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.landing-img img {
+  width: 100%;
+}
+.inner-content {
+  padding: 1rem;
 }
 /* Mini Project */
 .min-project-section {
@@ -398,6 +402,9 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 }
 
 @media (max-width: 730px) {
+  .nav-links li {
+    padding: 0.8rem;
+  }
   .intro-container {
     flex-wrap: wrap;
     flex-direction: column;
