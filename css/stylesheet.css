@@ -13,6 +13,11 @@
   --fs-h2: 2rem;
   --fs-small: 1rem;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: center;
+}
 
 body {
   font-family: "Spline Sans", sans-serif;
@@ -20,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   letter-spacing: 0.07rem;
+ 
 }
 
 /* Nav Bar */
@@ -28,6 +34,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+ 
 }
 .container {
   margin: 0 auto;
@@ -45,6 +52,7 @@ nav .logo {
   font-size: 1.2rem;
   border: 1px solid var(--third-color);
   padding: 0.2rem 1.5rem;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -70,6 +78,7 @@ li a:hover {
 /* Section 1 content */
 
 .section-1-content {
+  scroll-snap-align: center;
   min-height: 100vh;
   display: flex;
   justify-content: center;
