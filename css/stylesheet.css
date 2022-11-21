@@ -40,6 +40,12 @@ header {
   margin: 0 auto;
   width: min(80%, 80rem);
 }
+/*Subtitle Text*/
+.subtitle{
+  font-size: 1.5rem;
+  color: var(--second-color);
+  text-transform: uppercase;
+}
 
 nav {
   display: flex;
@@ -151,6 +157,7 @@ li a:hover {
 .orange-text {
   color: var(--fifth-color);
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 .about-me{
   box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, .2);
@@ -211,9 +218,7 @@ li a:hover {
   align-items: center;
   flex-direction: column;
 }
-.html-main-container h1 {
-  color: var(--second-color);
-}
+
 .html-content-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -221,26 +226,13 @@ li a:hover {
 }
 .html-column {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  
 }
 .html-column img {
   width: 100%;
 }
 .description-live{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
   padding: 0.5rem;
-  background: var(--second-color);
-  color: var(--third-color);
-}
-.desc {
-  width: 50%;
-}
-.live {
-  position: absolute;
-  right: 0.5rem;
-  bottom: 0.5rem;
 }
 
 .orange-btn {
@@ -262,12 +254,10 @@ li a:hover {
   background: var(--third-color);
   padding: 1rem 0;
 }
-.landing-page-section h1 {
-  text-align: center;
-}
+
 .landing-page-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1.5rem;
 }
 .landing-column {
@@ -432,6 +422,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
   }
   .about-column {
     width: 100%;
+    text-align: center;
   }
   .about-me {
     margin: 2rem 0;
