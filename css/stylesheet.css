@@ -484,7 +484,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 .hamburger{
     display: block;
     top: 5%;
-    left: 91%;
+    left: 88%;
     width: 30px;
     height: 30px;
     transform: translateY(-50%);
