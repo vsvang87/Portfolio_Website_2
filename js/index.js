@@ -35,3 +35,9 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+//hamburger menu
+function show() {
+  document.querySelector(".hamburger").classList.toggle("open");
+  document.querySelector(".navigation").classList.toggle("active");
+}

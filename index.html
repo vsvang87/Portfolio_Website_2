@@ -23,7 +23,14 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container navigation">
+        <!--Hamburger Button-->
+        <button class="hamburger" onclick="show()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </button>
+        <!--End Button-->
         <nav>
           <a href="index.html" class="logo">V.V.</a>
           <ul class="nav-links">
@@ -51,6 +58,7 @@
             <div class="intro-content">
               <h1>Visay Vang</h1>
               <p class="small-text">HTML Email / Frontend Developer</p>
+              <p class="small-text">Get In Touch: vsvang@gmail.com</p>
               <a href="https://www.linkedin.com/in/vsvang/" target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
@@ -93,6 +101,14 @@
                   <img src="/images/litmus.png" alt="litmus" />
                   <p>Litmus</p>
                 </div>
+                <div class="skill-6 skill-column">
+                  <img src="/images/wordpress.svg" alt="wordpress" />
+                  <p>WordPress</p>
+                </div>
+                <div class="skill-6 skill-column">
+                  <img src="/images/photoshop.png" alt="photoshop" />
+                  <p>PhotoSHop</p>
+                </div>
               </div>
             </div>
             <div class="about-me about-column">
@@ -125,7 +141,7 @@
                 <img src="/images/domino.png" alt="domino" />
                 <div class="description-live">
                   <div class="desc desciption-column">
-                    <p>Responsive Domino Transaction Email</p>
+                    <p>Responsive Transaction Email</p>
                   </div>
                   <div class="live description-column">
                     <a
@@ -142,7 +158,7 @@
                 <img src="/images/lids.png" alt="lids" />
                 <div class="description-live">
                   <div class="desc desciption-column">
-                    <p>Lids News Letter Email</p>
+                    <p>Responsive News Letter Email</p>
                   </div>
                   <div class="live description-column">
                     <a
@@ -160,7 +176,7 @@
                 <img src="/images/shoecarnival.png" alt="shoe carnival" />
                 <div class="description-live">
                   <div class="desc desciption-column">
-                    <p>Shoe Carnival Promotional Email</p>
+                    <p>Responsive Promotional Email</p>
                   </div>
                   <div class="live description-column">
                     <a
@@ -177,7 +193,7 @@
                 <img src="/images/goodcredit.png" alt="good credit" />
                 <div class="description-live">
                   <div class="desc desciption-column">
-                    <p>Good Credit Notification Email</p>
+                    <p>Responsive Notification Email</p>
                   </div>
                   <div class="live description-column">
                     <a
@@ -256,7 +272,7 @@
     <!--Footer-->
     <footer>
       <section class="footer-content">
-        <h1>Contact Me</h1>
+        <h1 class="orange-text">Contact Me</h1>
         <div class="container">
           <div class="footer-container" id="contact-me">
             <form
