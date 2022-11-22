@@ -216,6 +216,7 @@ li a:hover {
 .html-project-section {
   min-height: 170vh;
   background: var(--third-color);
+  padding-bottom: 1rem;
 }
 .html-main-container {
   display: flex;
@@ -524,6 +525,20 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 .hamburger.open #bar3{
     background-color: var(--fifth-color);
     transform: rotate(-45deg) translate(6px, -5px);
+}
+/* Close Menu On Click */
+.hamburger.close #bar1{
+  background-color: var(--fifth-color);
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.close #bar2{
+  background-color: transparent;
+}
+
+.hamburger.close #bar3{
+  background-color: var(--fifth-color);
+  transform: rotate(-45deg) translate(6px, -5px);
 }
 }
 @media (max-width:500px){
