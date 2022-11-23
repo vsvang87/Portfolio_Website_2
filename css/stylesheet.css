@@ -73,6 +73,7 @@ nav .logo {
   padding: 0 1rem;
 }
 .nav-links li a {
+  font-size: .8rem;
   text-decoration: none;
   color: var(--third-color);
   transition: 0.2s ease-in-out;
@@ -125,7 +126,7 @@ li a:hover {
 }
 .intro-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 2rem;
 }
@@ -215,7 +216,7 @@ li a:hover {
 
 /* Projects, HTML Email */
 .html-project-section {
-  min-height: 170vh;
+  min-height: 150vh;
   background: var(--third-color);
   padding-bottom: 1rem;
 }
@@ -233,13 +234,17 @@ li a:hover {
 }
 .html-column {
   box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.2);
-  
+  transition: 0.2s ease;
+}
+.html-column:hover{
+  transform: scale(1.05);
 }
 .html-column img {
   width: 100%;
 }
-.description-live{
-  padding: 0.5rem;
+.description-column{
+ padding: 1rem;
+ position: relative;
 }
 
 .orange-btn {
@@ -270,6 +275,7 @@ li a:hover {
 .landing-column {
   width: 100%;
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+  min-height: 200px;
 }
 .landing-img img {
   width: 100%;
@@ -483,7 +489,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 }
 
 .hamburger, .bar{
-    position: absolute;
+    position: fixed;
     top: 2rem;
     right: 2rem;
 }
