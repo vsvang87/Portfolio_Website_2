@@ -39,6 +39,7 @@ header {
 .container {
   margin: 0 auto;
   width: min(80%, 80rem);
+  position: relative;
 }
 /*Subtitle Text*/
 .subtitle{
@@ -102,7 +103,7 @@ li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+  
   top: 0;
   left: 0;
   right: 0;
@@ -192,7 +193,7 @@ li a:hover {
 /* Section 3, Skills */
 .skills-container {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
 }
@@ -242,9 +243,9 @@ li a:hover {
 }
 
 .orange-btn {
-  padding: 0.2rem 0.5rem;
+  padding: 0.3rem .7rem;
   background: var(--fifth-color);
-  border-radius: 0.1rem;
+  border-radius: 25px;
   color: var(--third-color);
   text-decoration: none;
   transition: 0.2s ease-in-out;
@@ -256,7 +257,6 @@ li a:hover {
 
 /* Landing Page */
 .landing-page-section {
-  clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
   min-height: 100vh;
   background: var(--third-color);
   padding: 1rem 0;
@@ -399,16 +399,9 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
   }
   
 }
-@media (max-width: 768px){
-  form {
-    width: 100%;
-  }
-  .input-group {
-    width: 100%;
-  }
-}
 
-@media (max-width: 730px) {
+
+@media (max-width: 830px) {
   .nav-links li {
     padding: 0.8rem;
   }
@@ -443,8 +436,19 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
   .section-3-content {
     min-height: 50vh;
   }
+  @media (max-width: 768px){
+    form {
+      width: 100%;
+    }
+    .input-group {
+      width: 100%;
+    }
+  }
  
   /* Hamburger Menu */
+  .navigation{
+    position: relative;
+  }
   nav{
     position: absolute;
     top: 100px;
@@ -479,7 +483,9 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 }
 
 .hamburger, .bar{
-    position: fixed;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 .hamburger{
