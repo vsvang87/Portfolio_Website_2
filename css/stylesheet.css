@@ -6,9 +6,11 @@
 :root {
   --first-color: #232931;
   --second-color: #393e46;
-  --third-color: #eeeeee;
-  --fourth-color: #8fb1e9;
+  --third-color: #ececec;
+  --fourth-color: #668ba4;
   --fifth-color: #dd6b4d;
+  --sixth-color: #97cba9;
+  --seventh-color: #feffdf;
 
   --fs-h1: 5rem;
   --fs-h2: 2rem;
@@ -30,7 +32,7 @@ body {
 
 /* Nav Bar */
 header {
-  background: var(--second-color);
+  background: var(--fourth-color);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -58,7 +60,7 @@ nav {
 nav .logo {
   color: var(--third-color);
   font-size: 1.2rem;
-  border: 1px solid var(--third-color);
+  border: 1px solid var(--sixth-color);
   padding: 0.2rem 1.5rem;
   text-decoration: none;
 }
@@ -79,8 +81,8 @@ nav .logo {
   transition: 0.2s ease-in-out;
 }
 
-li a:hover {
-  color: var(--fifth-color);
+.nav-links li a:hover {
+  color: var(--seventh-color);
 }
 .hamburger {
   display: none;
@@ -99,7 +101,7 @@ li a:hover {
 /* Transparent Background */
 .section-1-content::before {
   content: '';
-  background-image: url(/images/luca-bravo-VowIFDxogG4-unsplash.jpg);
+  background-image: url(/images/road-g25e2fbeed_1280.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,7 +111,7 @@ li a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  filter: brightness(40%);
+  filter: brightness(60%);
 }
 .intro-content{
   position: relative;
@@ -120,7 +122,7 @@ li a:hover {
   margin: 0;
 }
 .section-1-content p {
-  color: var(--fifth-color);
+  color: var(--sixth-color);
   margin: 0.5rem 0;
   
 }
@@ -132,7 +134,7 @@ li a:hover {
 }
 
 .intro-content i {
-  color: var(--fifth-color);
+  color: var(--seventh-color);
   font-size: 1.5rem;
   padding: 0 0.2rem;
   transition: 0.2s ease-in-out;
@@ -153,6 +155,7 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--third-color);
 }
 .about-me-container{
   display: flex;
@@ -160,13 +163,13 @@ li a:hover {
   align-items: flex-start;
 }
 .orange-text {
-  color: var(--fifth-color);
+  color: var(--second-color);
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 .about-me{
   box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, .2);
-  background: var(--third-color);
+  background: var(--sixth-color);
 }
 .about-me p {
   line-height: 1.5rem;
@@ -216,9 +219,11 @@ li a:hover {
 
 /* Projects, HTML Email */
 .html-project-section {
-  min-height: 150vh;
+  min-height: 100vh;
   background: var(--third-color);
-  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .html-main-container {
   display: flex;
@@ -229,7 +234,8 @@ li a:hover {
 
 .html-content-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: subgrid;
   gap: 1.5rem;
 }
 .html-column {
@@ -249,7 +255,7 @@ li a:hover {
 
 .orange-btn {
   padding: 0.3rem .7rem;
-  background: var(--fifth-color);
+  background: var(--sixth-color);
   border-radius: 25px;
   color: var(--third-color);
   text-decoration: none;
@@ -257,7 +263,7 @@ li a:hover {
 }
 .orange-btn:hover{
   background: var(--third-color);
-  color: var(--fifth-color);
+  color: var(--fourth-color);
 }
 
 /* Landing Page */
@@ -269,19 +275,20 @@ li a:hover {
 
 .landing-page-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 .landing-column {
   width: 100%;
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
-  min-height: 200px;
+  
 }
 .landing-img img {
   width: 100%;
 }
 .inner-content {
   padding: 1rem;
+  min-height: 100%;
 }
 /* Mini Project */
 .min-project-section {
@@ -302,12 +309,12 @@ li a:hover {
 /* Section 4 Content */
 footer {
   min-height: 100vh;
-  background: var(--second-color);
+  background: var(--fourth-color);
 }
 .footer-content h1 {
   padding: 2rem 0;
   text-align: center;
-  color: var(--fifth-color);
+  color: var(--second-color);
   text-transform: uppercase;
   margin: 0;
 }
@@ -360,7 +367,7 @@ label {
 }
 .submit-btn {
   padding: .7rem 2rem;
-  background-color: var(--fifth-color);
+  background-color: var(--sixth-color);
   color: var(--third-color);
   border: none;
   cursor: pointer;
@@ -371,7 +378,7 @@ label {
 }
 .submit-btn:hover{
   background: var(--third-color);
-  color: var(--fifth-color);
+  color: var(--second-color);
 }
 input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
   top: -35px;
