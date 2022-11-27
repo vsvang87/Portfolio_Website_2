@@ -1,6 +1,18 @@
 //form handle
 let form = document.getElementById("my-form");
+let readBtn = document.getElementById("read-btn");
+let closeBtn = document.getElementById("close-btn");
+let modalContainer = document.getElementById("modal-container");
 
+//open modal
+readBtn.addEventListener("click", () => {
+  modalContainer.style.display = "block";
+});
+closeBtn.addEventListener("click", () => {
+  modalContainer.style.display = "none";
+});
+
+//form submit handler
 async function handleSubmit(event) {
   event.preventDefault();
   var status = document.getElementById("status");
@@ -35,9 +47,3 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
-
-//hamburger menu
-function show() {
-  document.querySelector(".hamburger").classList.toggle("open");
-  document.querySelector(".navigation").classList.toggle("active");
-}

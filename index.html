@@ -23,13 +23,7 @@
   </head>
   <body>
     <header>
-      <div class="container navigation">
-        <!--Hamburger Button-->
-        <button class="hamburger" onclick="show()">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
-        </button>
+      <div class="container">
         <!--End Button-->
         <nav>
           <a href="index.html" class="logo">V.V.</a>
@@ -50,12 +44,12 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <main>
+
       <section class="section-1-content">
         <div class="container">
           <div class="intro-container">
             <div class="intro-content">
+              <p>Welcome, my name is</p>
               <h1>Visay Vang</h1>
               <p class="small-text">HTML Email / Frontend Developer</p>
               <p class="small-text">Get In Touch: vsvang@gmail.com</p>
@@ -69,9 +63,11 @@
           </div>
         </div>
       </section>
+    </header>
+    <main>
       <!--Section 2, About Me-->
       <section class="section-2-content" id="about-me">
-        <div class="container">
+        <div class="wrapper">
           <div class="about-me-container">
             <div class="about-img about-column">
               <h1 class="subtitle">Skills</h1>
@@ -115,21 +111,44 @@
               <h1 class="orange-text">About Me</h1>
               <img src="/images/IMG_4012.JPG" alt="img of me" />
               <p>
-                Hello, my name is Visay Vang. I am 35 years old, married and a
-                father of 4. I came across code a year ago and fell in love with
-                it. I am punctual, reliable, detail-oriented, self-driven, and
-                highly motivated. I want to make this jump into the tech
-                industry.
+                I'm Visay, I am 35 years old, married and a father of 4. I came
+                across code a year ago and liked alot. I am ready to make this
+                jump into the tech industry.
               </p>
-              <p>
-                Outside from code, I love to spend time with my family. I like
-                to go fishing, play sports and hike.
-              </p>
+              <button class="orange-btn read-me-btn" id="read-btn">
+                Read More
+              </button>
             </div>
           </div>
         </div>
       </section>
+      <!--Read More Modal-->
+      <div class="modal-container" id="modal-container">
+        <button class="close-btn" id="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
 
+        <div class="modal-content">
+          <div class="modal-about-me">
+            <h1>More About Me</h1>
+            <p>
+              Hi, I came across code 2 years ago and really like it. I saw the
+              power it has after coding my first "Hello World". All kinds of
+              ideas rush into my head and the possibilities are endless. I
+              wanted the power in my hand and decided to embarked on this
+              journey. I am passionate, reliable, and highly motivated. What I
+              don't know I will figure it out.
+            </p>
+            <p>
+              Outside from code I love to spend time with my family and hang out
+              with friends. I like to watch sports especially football,
+              basketball and soccer. I also like to go fishing and play sports.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal End-->
       <!--Section 3, HTML Emails-->
       <section class="html-project-section" id="projects">
         <div class="container">
@@ -212,10 +231,9 @@
           <div class="landing-page-container">
             <!--Underground Landing page-->
             <div class="landing-page-content landing-column">
-              <div class="landing-img">
-                <img src="/images/underground.jpg" alt="underground t-shirt" />
-              </div>
-              <div class="resturant landing-column">
+              <img src="/images/underground.jpg" alt="underground t-shirt" />
+
+              <div class="resturant">
                 <div class="inner-content inner-column">
                   <h1>Underground T-Shirt Printing</h1>
                   <p>
@@ -232,12 +250,11 @@
                 </div>
               </div>
             </div>
-            <!--Resturant landing page-->
+            <!--Sunnyside landing page-->
             <div class="landing-page-content landing-column">
-              <div class="landing-img">
-                <img src="/images/sunnyside.jpg" alt="sunnyside landing page" />
-              </div>
-              <div class="resturant landing-column">
+              <img src="/images/sunnyside.jpg" alt="sunnyside landing page" />
+
+              <div class="resturant">
                 <div class="inner-content inner-column">
                   <h1>Sunnyside</h1>
                   <p>
@@ -255,10 +272,9 @@
               </div>
             </div>
             <div class="landing-page-content landing-column">
-              <div class="landing-img">
-                <img src="/images/tesla.jpg" alt="Tesla" />
-              </div>
-              <div class="resturant landing-column">
+              <img src="/images/tesla.jpg" alt="Tesla" />
+
+              <div class="resturant">
                 <div class="inner-content inner-column">
                   <h1>Tesla Clone</h1>
                   <p>
@@ -278,7 +294,7 @@
           </div>
         </div>
       </section>
-      <!--Section 3, Mini Projects -->
+      <!--Section 3, 
       <section class="min-project-section">
         <div class="container">
           <h1>Mini Project</h1>
@@ -289,6 +305,7 @@
           </div>
         </div>
       </section>
+      Mini Projects -->
     </main>
     <!--Footer-->
     <footer>
@@ -328,7 +345,10 @@
                   ><i class="fa-solid fa-message"></i> Message</label
                 >
               </div>
-              <button type="submit" class="submit-btn">Submit</button>
+              <div class="choice-btns">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="submit-btn">Reset</button>
+              </div>
             </form>
             <div id="status"></div>
           </div>
