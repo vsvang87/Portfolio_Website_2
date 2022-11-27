@@ -261,7 +261,7 @@ nav .logo {
 .close-btn {
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 1rem;
   font-size: 1.8rem;
   color: var(--third-color);
   background: var(--second-color);
