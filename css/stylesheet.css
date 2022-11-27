@@ -72,6 +72,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  position: relative;
 }
 nav .logo {
   color: var(--third-color);
@@ -80,7 +81,28 @@ nav .logo {
   padding: 0.2rem 1.5rem;
   text-decoration: none;
 }
-
+.hamburger-btn {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  border: none;
+  background: none;
+  color: var(--third-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.hamburger-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  background: var(--second-color);
+  border: none;
+  font-size: 2rem;
+  color: var(--third-color);
+  cursor: pointer;
+  display: none;
+}
 .nav-links {
   display: flex;
   align-items: center;
@@ -486,11 +508,47 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
   .html-column {
     width: 100%;
   }
+  .landing-page-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 830px) {
+  nav{
+    padding-top: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    top: -15px;
+    right: 0;
+    left: 55rem;
+    bottom: 0;
+    background: var(--second-color);
+    height: 100%;
+    width: 50%;
+    transition: 0.5s ease;
+  }
   .nav-links li {
-    padding: 0.8rem;
+    padding: 2rem 0;
+  }
+  .nav-links li a {
+    font-size: 1.5rem;
+  }
+  .nav-links.active{
+    left: 25rem;
+  }
+.hamburger-btn {
+  display: block;
+}
+  .hamburger-close-btn{
+    display: block;
+    transition: 0.2s ease-in-out;
+  }
+  .hamburger-close-btn:hover{
+    color: var(--fifth-color);
   }
   .intro-container {
     flex-wrap: wrap;
@@ -529,6 +587,9 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     }
     .html-column {
       width: 100%;
+    }
+    .landing-page-container {
+      grid-template-columns: 1fr;
     }
 
     form {
