@@ -3,9 +3,7 @@ let form = document.getElementById("my-form");
 let readBtn = document.getElementById("read-btn");
 let closeBtn = document.getElementById("close-btn");
 let modalContainer = document.getElementById("modal-container");
-let hamburgerCloseBtn = document.getElementById("hamburger-close-btn");
-let hamburgerOpenBtn = document.getElementById("hamburger-open-btn");
-let navLinks = document.getElementById("nav-links");
+
 //open modal
 readBtn.addEventListener("click", () => {
   modalContainer.style.display = "block";
@@ -14,14 +12,6 @@ closeBtn.addEventListener("click", () => {
   modalContainer.style.display = "none";
 });
 
-//open hamburger menu
-hamburgerOpenBtn.addEventListener("click", () => {
-  navLinks.classList.add("active");
-});
-//close hamburger menu
-hamburgerCloseBtn.addEventListener("click", () => {
-  navLinks.classList.remove("active");
-});
 //form submit handler
 async function handleSubmit(event) {
   event.preventDefault();
