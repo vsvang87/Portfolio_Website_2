@@ -222,7 +222,7 @@ nav .logo {
 .read-me-btn {
   border: none;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 /* Modal Content */
 .modal-container {
@@ -231,7 +231,7 @@ nav .logo {
   align-items: center;
   position: fixed;
   z-index: 3;
-  top: 4rem;
+  top: 1rem;
   right: 0;
   left: 0;
   bottom: 0;
@@ -242,7 +242,7 @@ nav .logo {
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   display: none;
-  animation: modal 0.5s ease forwards ;
+  animation: modal 0.7s ease forwards ;
 }
 .modal-content {
   color: var(--third-color);
@@ -491,13 +491,14 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
   0%{
     opacity: 0;
   }
-  50%{
-    transform: translateX(10px);
-    opacity: .5;
+ 
+  70%{
+    transform: translateY(15px);
+    opacity: .7;
   }
   100%{
     opacity: 1;
-    transform: translateX(10px);
+    transform: translateY(20px);
   }
 }
 
