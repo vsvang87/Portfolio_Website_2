@@ -367,7 +367,11 @@ nav .logo {
 /* Mini Project */
 .min-project-section {
   min-height: 100vh;
-  
+}
+.min-project-section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--second-color);
 }
 .mini-project-content {
   display: flex;
@@ -377,8 +381,18 @@ nav .logo {
 }
 .mini-column {
   width: 32%;
-  height: 30vh;
-  border: 1px solid var(--fifth-color);
+  min-height: 100%;
+  background: var(--third-color);
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 1rem;
+}
+.mini-column img {
+  width: 100%;
+  border-radius:  10px 10px 0 0 ;
+}
+.mini-inner-content {
+  padding: 0 1rem;
 }
 /* Section 4 Content */
 footer {
@@ -547,6 +561,14 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
   .section-3-content {
     min-height: 50vh;
   }
+  .mini-project-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .mini-column {
+    width: 100%;
+  }
+}
   @media (max-width: 768px){
     .html-content-container  {
       grid-template-columns: 1fr;
@@ -566,7 +588,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     }
   }
  
-}
+
 @media(max-width: 600px){
   .modal-container {
     width: 420px;
