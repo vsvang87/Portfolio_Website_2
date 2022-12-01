@@ -140,7 +140,7 @@ nav .logo {
   position: relative;
 }
 .intro-content h1 {
-  font-size: var(--fs-h1);
+  font-size: calc(5vw + 2rem);
   color: var(--third-color);
   margin: 0;
 }
@@ -215,14 +215,27 @@ nav .logo {
   color: var(--second-color);
   text-transform: uppercase;
 }
-.about-img img {
-  width: 100%;
-  padding-top: 2rem;
-}
+
 .read-me-btn {
   border: none;
   cursor: pointer;
   margin-bottom: 1.6rem;
+}
+.status-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.status-column{
+  width: 48%;
+  font-size: 0.8rem;
+}
+.status-column img {
+  width: 70%;
+}
+.status-column p {
+  margin: 0;
 }
 /* Modal Content */
 .modal-container {
@@ -231,7 +244,7 @@ nav .logo {
   align-items: center;
   position: fixed;
   z-index: 3;
-  top: 1rem;
+  top: 2rem;
   right: 0;
   left: 0;
   bottom: 0;
