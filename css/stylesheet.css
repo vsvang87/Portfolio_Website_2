@@ -389,16 +389,16 @@ nav .logo {
 .mini-project-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 .mini-column {
   width: 32%;
-  min-height: 100%;
   background: var(--third-color);
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 10px 10px;
   padding-bottom: 1rem;
+  margin: 1.2rem 0;
 }
 .mini-column img {
   width: 100%;
