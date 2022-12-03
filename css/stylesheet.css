@@ -349,7 +349,10 @@ nav .logo {
 .landing-page-section {
   min-height: 100vh;
   background: var(--third-color);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-page-container {
@@ -380,6 +383,10 @@ nav .logo {
 /* Mini Project */
 .min-project-section {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
 }
 .min-project-section h1 {
   text-align: center;
