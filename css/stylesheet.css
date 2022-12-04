@@ -77,8 +77,8 @@ nav {
 nav .logo {
   color: var(--third-color);
   font-size: 1.2rem;
-  border: 1px solid var(--fifth-color);
-  padding: 0.2rem 1.5rem;
+  border: 2px solid var(--fifth-color);
+  padding: 0.2rem 1rem;
   text-decoration: none;
 }
 .hamburger-btn {
@@ -191,6 +191,9 @@ nav .logo {
   color: var(--third-color);
   text-transform: uppercase;
   font-size: 1.5rem;
+  margin: 0;
+  padding: 1.2rem 0;
+  border-radius: 10px 10px 0 0;
 }
 .about-me{
   box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, .2);
@@ -199,7 +202,7 @@ nav .logo {
 }
 .about-me p {
   line-height: 1.2rem;
-  padding: 0 .8rem;
+  padding: 0.2rem 1.8rem;
   color: var(--third-color);
   text-align: left;
 }
@@ -344,7 +347,10 @@ nav .logo {
  padding: 1rem;
  position: relative;
 }
-
+.description-column .img-icon{
+  width: 28px;
+  height: 20px;
+}
 /* Landing Page */
 .landing-page-section {
   min-height: 100vh;
@@ -378,7 +384,10 @@ nav .logo {
 .inner-content {
   padding: 1rem;
   min-height: 100%;
-  
+}
+.inner-column .img-icon{
+  width: 28px;
+  height: 20px;
 }
 /* Mini Project */
 .min-project-section {
@@ -406,6 +415,10 @@ nav .logo {
   border-radius: 0 0 10px 10px;
   padding-bottom: 1rem;
   margin: 1.2rem 0;
+  transition: 0.2s ease-in-out;
+}
+.mini-column:hover{
+  transform: scale(1.05);
 }
 .mini-column img {
   width: 100%;
@@ -413,6 +426,10 @@ nav .logo {
 }
 .mini-inner-content {
   padding: 0 1rem;
+}
+.mini-inner-content .img-icon{
+  width: 28px;
+  height: 20px;
 }
 /* Section 4 Content */
 footer {
@@ -632,6 +649,11 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     width: 260px;
     font-size: 0.8rem;
     padding-top: 1rem;
+  }
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
   
 }
